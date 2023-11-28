@@ -2,6 +2,9 @@ package mx.edu.utez.IntegradoraServicios;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.security.Principal;
 
 @SpringBootApplication
 public class IntegradoraServiciosApplication {
@@ -10,4 +13,8 @@ public class IntegradoraServiciosApplication {
 		SpringApplication.run(IntegradoraServiciosApplication.class, args);
 	}
 
+	@RequestMapping(value = "oauth2/code/google")
+	public Principal oauth(Principal principal) {
+		return principal;
+	}
 }
