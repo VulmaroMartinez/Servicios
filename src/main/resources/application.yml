@@ -4,6 +4,11 @@ spring:
       client:
         registration:
           google:
-            client-id:
-            client-secret:
-
+            provider: google
+            client-id: 423252902110-6913gb8r7ghb8mf3iqjonk5jrcte1vvg.apps.googleusercontent.com
+            client-secret: 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
+            authorization-grant-type: authorization_code
+            scope: openid, email, profile
+        provider:
+          google:
+            issuer-uri: https://accounts.google.com

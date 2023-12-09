@@ -13,8 +13,4 @@ public class IntegradoraServiciosApplication {
 		SpringApplication.run(IntegradoraServiciosApplication.class, args);
 	}
 
-	@RequestMapping(value = "oauth2/code/google")
-	public Principal oauth(Principal principal) {
-		return principal;
-	}
 }

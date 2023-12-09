@@ -44,26 +44,11 @@
                         </div>
 
                         <!-- Botón de inicio de sesión con Google -->
-                       <a href="oauth2/code/google"> <button type="button" class="btn btn-outline-dark btn-block rounded-pill" >
+                       <a href="/oauth2/authorization/google"> <button type="button" class="btn btn-outline-dark btn-block rounded-pill" >
 
                             <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google Logo">
                         </button> </a>
                     </center>
-
-                    <!--
-                    <script>
-                        function loginPageGoogle(){
-                            const getGoogleLogin = () => {
-                                fetch("http://localhost:8080/oauth2/code/google")
-                                    .then( response => response.text())
-                                    .then ( response => {
-                                        window.location.replace(response);
-                                    })
-                            };
-                            getGoogleLogin();
-                        }
-                    </script>
-                    -->
 
                 </div>
             </div>
